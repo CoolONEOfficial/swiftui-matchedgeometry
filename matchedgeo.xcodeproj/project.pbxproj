@@ -11,6 +11,15 @@
 		852BD98027527BBE000FD97D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BD97F27527BBE000FD97D /* ContentView.swift */; };
 		852BD98227527BBF000FD97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852BD98127527BBF000FD97D /* Assets.xcassets */; };
 		852BD98527527BBF000FD97D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852BD98427527BBF000FD97D /* Preview Assets.xcassets */; };
+		852BD98C27527C6A000FD97D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BD98B27527C6A000FD97D /* DetailsView.swift */; };
+		852BD9902752B78C000FD97D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BD98F2752B78C000FD97D /* CardView.swift */; };
+		852BD99527539D64000FD97D /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 852BD99427539D64000FD97D /* SwiftUIX */; };
+		852BD99827539D97000FD97D /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 852BD99727539D97000FD97D /* PureSwiftUI */; };
+		8553DB13275572C700BB5928 /* Snap in Frameworks */ = {isa = PBXBuildFile; productRef = 8553DB12275572C700BB5928 /* Snap */; };
+		8553DB162756C40D00BB5928 /* String+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553DB152756C40D00BB5928 /* String+mock.swift */; };
+		8553DB192756C43700BB5928 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553DB182756C43700BB5928 /* MainView.swift */; };
+		8553DB1B2756C43E00BB5928 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553DB1A2756C43E00BB5928 /* MainViewModel.swift */; };
+		8553DB1E2756C4A600BB5928 /* CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553DB1D2756C4A600BB5928 /* CardDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,12 @@
 		852BD97F27527BBE000FD97D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		852BD98127527BBF000FD97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		852BD98427527BBF000FD97D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		852BD98B27527C6A000FD97D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		852BD98F2752B78C000FD97D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8553DB152756C40D00BB5928 /* String+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+mock.swift"; sourceTree = "<group>"; };
+		8553DB182756C43700BB5928 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8553DB1A2756C43E00BB5928 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8553DB1D2756C4A600BB5928 /* CardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8553DB13275572C700BB5928 /* Snap in Frameworks */,
+				852BD99827539D97000FD97D /* PureSwiftUI in Frameworks */,
+				852BD99527539D64000FD97D /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +69,13 @@
 		852BD97C27527BBE000FD97D /* matchedgeo */ = {
 			isa = PBXGroup;
 			children = (
+				8553DB1C2756C49D00BB5928 /* Model */,
+				8553DB172756C42D00BB5928 /* Main */,
+				8553DB142756C3FF00BB5928 /* Extensions */,
 				852BD97D27527BBE000FD97D /* matchedgeoApp.swift */,
-				852BD97F27527BBE000FD97D /* ContentView.swift */,
 				852BD98127527BBF000FD97D /* Assets.xcassets */,
 				852BD98327527BBF000FD97D /* Preview Content */,
+				852BD97F27527BBE000FD97D /* ContentView.swift */,
 			);
 			path = matchedgeo;
 			sourceTree = "<group>";
@@ -65,6 +86,41 @@
 				852BD98427527BBF000FD97D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8553DB142756C3FF00BB5928 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8553DB152756C40D00BB5928 /* String+mock.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8553DB172756C42D00BB5928 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8553DB1F2756C50700BB5928 /* Views */,
+				8553DB182756C43700BB5928 /* MainView.swift */,
+				8553DB1A2756C43E00BB5928 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8553DB1C2756C49D00BB5928 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8553DB1D2756C4A600BB5928 /* CardDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8553DB1F2756C50700BB5928 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				852BD98B27527C6A000FD97D /* DetailsView.swift */,
+				852BD98F2752B78C000FD97D /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,11 @@
 			dependencies = (
 			);
 			name = matchedgeo;
+			packageProductDependencies = (
+				852BD99427539D64000FD97D /* SwiftUIX */,
+				852BD99727539D97000FD97D /* PureSwiftUI */,
+				8553DB12275572C700BB5928 /* Snap */,
+			);
 			productName = matchedgeo;
 			productReference = 852BD97A27527BBE000FD97D /* matchedgeo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +172,11 @@
 				Base,
 			);
 			mainGroup = 852BD97127527BBE000FD97D;
+			packageReferences = (
+				852BD99327539D64000FD97D /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				852BD99627539D97000FD97D /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+				8553DB11275572C700BB5928 /* XCRemoteSwiftPackageReference "Snap" */,
+			);
 			productRefGroup = 852BD97B27527BBE000FD97D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8553DB1B2756C43E00BB5928 /* MainViewModel.swift in Sources */,
+				8553DB162756C40D00BB5928 /* String+mock.swift in Sources */,
+				8553DB192756C43700BB5928 /* MainView.swift in Sources */,
+				8553DB1E2756C4A600BB5928 /* CardDataModel.swift in Sources */,
 				852BD98027527BBE000FD97D /* ContentView.swift in Sources */,
 				852BD97E27527BBE000FD97D /* matchedgeoApp.swift in Sources */,
+				852BD9902752B78C000FD97D /* CardView.swift in Sources */,
+				852BD98C27527C6A000FD97D /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +413,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		852BD99327539D64000FD97D /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+		852BD99627539D97000FD97D /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		8553DB11275572C700BB5928 /* XCRemoteSwiftPackageReference "Snap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoolONEOfficial/Snap";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		852BD99427539D64000FD97D /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852BD99327539D64000FD97D /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		852BD99727539D97000FD97D /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852BD99627539D97000FD97D /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+		8553DB12275572C700BB5928 /* Snap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8553DB11275572C700BB5928 /* XCRemoteSwiftPackageReference "Snap" */;
+			productName = Snap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 852BD97227527BBE000FD97D /* Project object */;
 }
